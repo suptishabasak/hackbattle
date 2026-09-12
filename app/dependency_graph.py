@@ -97,3 +97,37 @@ if __name__ == "__main__":
 
         for dependency in dependencies:
             print(f"  -> {dependency}")
+
+def get_affected_files(graph, changed_file):
+    """Find all files that depend on the changed file."""
+
+    affected = []
+
+    for file, dependencies in graph.items():
+        if changed_file in dependencies:
+            affected.append(file)
+
+            # Find files affected by this file too
+            affected += get_affected_files(graph, file)
+
+    return list(set(affected))
+
+
+def get_affected_tests(graph, changed_file):
+    """Find tests that may be affected by a changed file."""
+
+    affected_files = get_affected_files(graph, changed_file)
+
+    affected_tests = []
+
+    for file in affected_files:
+        if file.startswith("tests/"):
+            affected_tests.append(file)
+
+    return affected_tests
+
+print("\nAffected files:")
+print(get_affected_files(graph, "github_client.py"))
+
+print("\nAffected tests:")
+print(get_affected_tests(graph, "app/sample_code.py"))

@@ -1,2 +1,2 @@
-import utils
-from test_analyzer import analyze_test
+def calculate_total(price, quantity):
+    return price * quantity
