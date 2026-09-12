@@ -122,6 +122,28 @@ def get_affected_files(graph, changed_file):
     return list(set(affected))
 
 
+def get_affected_files(graph, changed_file):
+    """Find all files that depend on the changed file."""
+
+    affected = []
+    visited = set()
+
+    def find_affected(file):
+        if file in visited:
+            return
+
+        visited.add(file)
+
+        for current_file, dependencies in graph.items():
+            if file in dependencies:
+                affected.append(current_file)
+                find_affected(current_file)
+
+    find_affected(changed_file)
+
+    return affected
+
+
 def get_affected_tests(graph, changed_file):
     """Find tests that may be affected by a changed file."""
 
@@ -134,6 +156,7 @@ def get_affected_tests(graph, changed_file):
             affected_tests.append(file)
 
     return affected_tests
+    
 
 def analyze_change(changed_file, project_folder="."):
     """Analyze a changed file and return the affected tests."""
