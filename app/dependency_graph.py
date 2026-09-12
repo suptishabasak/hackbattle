@@ -98,6 +98,15 @@ if __name__ == "__main__":
         for dependency in dependencies:
             print(f"  -> {dependency}")
 
+    print("\nAffected files:")
+    print(get_affected_files(graph, "github_client.py"))
+
+    print("\nAffected tests:")
+    print(get_affected_tests(graph, "app/sample_code.py"))
+
+    print("\nTests affected by change:")
+    print(analyze_change("app/sample_code.py"))
+
 def get_affected_files(graph, changed_file):
     """Find all files that depend on the changed file."""
 
@@ -121,13 +130,15 @@ def get_affected_tests(graph, changed_file):
     affected_tests = []
 
     for file in affected_files:
-        if file.startswith("tests/"):
+        if "/tests/" in file or file.startswith("tests/"):
             affected_tests.append(file)
 
     return affected_tests
 
-print("\nAffected files:")
-print(get_affected_files(graph, "github_client.py"))
+def analyze_change(changed_file, project_folder="."):
+    """Analyze a changed file and return the affected tests."""
 
-print("\nAffected tests:")
-print(get_affected_tests(graph, "app/sample_code.py"))
+    graph = build_dependency_graph(project_folder)
+
+    return get_affected_tests(graph, changed_file)
+
