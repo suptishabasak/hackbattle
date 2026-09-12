@@ -361,7 +361,7 @@ elif page == "🕒 Historical Replay":
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
         xaxis_title=None, yaxis_title="Tests executed",
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
     c1, c2, c3 = st.columns(3)
     c1.metric("Avg. Test Reduction", "87%")
@@ -376,4 +376,4 @@ elif page == "🕒 Historical Replay":
         "Regression Caught": "Regression?",
     }).copy()
     display_df["Regression?"] = display_df["Regression?"].map({1: "🔴 Yes", 0: "🟢 No"})
-    st.dataframe(display_df, use_container_width=True, hide_index=True)
+    st.dataframe(display_df, width="stretch", hide_index=True)
