@@ -87,25 +87,6 @@ def build_dependency_graph(folder):
     return graph
 
 
-if __name__ == "__main__":
-    graph = build_dependency_graph(".")
-
-    print("Dependency Graph:")
-
-    for file, dependencies in graph.items():
-        print(f"\n{file} depends on:")
-
-        for dependency in dependencies:
-            print(f"  -> {dependency}")
-
-    print("\nAffected files:")
-    print(get_affected_files(graph, "github_client.py"))
-
-    print("\nAffected tests:")
-    print(get_affected_tests(graph, "app/sample_code.py"))
-
-    print("\nTests affected by change:")
-    print(analyze_change("app/sample_code.py"))
 
 def get_affected_files(graph, changed_file):
     """Find all files that depend on the changed file."""
@@ -164,4 +145,24 @@ def analyze_change(changed_file, project_folder="."):
     graph = build_dependency_graph(project_folder)
 
     return get_affected_tests(graph, changed_file)
+
+if __name__ == "__main__":
+    graph = build_dependency_graph(".")
+
+    print("Dependency Graph:")
+
+    for file, dependencies in graph.items():
+        print(f"\n{file} depends on:")
+
+        for dependency in dependencies:
+            print(f"  -> {dependency}")
+
+    print("\nAffected files:")
+    print(get_affected_files(graph, "github_client.py"))
+
+    print("\nAffected tests:")
+    print(get_affected_tests(graph, "app/sample_code.py"))
+
+    print("\nTests affected by change:")
+    print(analyze_change("app/sample_code.py"))
 
