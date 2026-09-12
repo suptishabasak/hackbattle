@@ -12,7 +12,7 @@ def collect_historical_prs(repo_name):
     count = 0
 
     for pr in pulls:
-        if count >= 20:   # stop after 20 PRs for testing
+        if count >= 100:   # stop after 20 PRs for testing
             break
         count += 1
 

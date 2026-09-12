@@ -22,16 +22,14 @@ def apply_safety_mechanism(risk_score, confidence, threshold=0.5):
         return "RUN"
     else:
         return "SKIP"
+if __name__ == "__main__":
+    with open("historical_data.json") as f:
+        data = json.load(f)
+    test_file = "packages/react-dom/src/__tests__/ReactDOMFragmentRefs-test.js"
+    risk = get_risk_score(test_file, data)
+    conf = get_confidence(test_file, data)
+    decision = apply_safety_mechanism(risk, conf)
+    print("Risk score:", risk)
+    print("Confidence:", conf)
+    print("Decision:", decision)
 
-with open("historical_data.json") as f:
-    data = json.load(f)
-
-test_file = "packages/react-dom/src/__tests__/ReactDOMFragmentRefs-test.js"
-
-risk = get_risk_score(test_file, data)
-conf = get_confidence(test_file, data)
-decision = apply_safety_mechanism(risk, conf)
-
-print("Risk score:", risk)
-print("Confidence:", conf)
-print("Decision:", decision)
