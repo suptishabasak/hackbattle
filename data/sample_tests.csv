@@ -1,0 +1,11 @@
+test_name,file_path,module
+test_login,tests/test_login.py,auth
+test_logout,tests/test_logout.py,auth
+test_payment,tests/test_payment.py,payment
+test_payment_refund,tests/test_payment_refund.py,payment
+test_checkout,tests/test_checkout.py,checkout
+test_cart,tests/test_cart.py,cart
+test_product_search,tests/test_product_search.py,products
+test_product_details,tests/test_product_details.py,products
+test_profile,tests/test_profile.py,user
+test_password_reset,tests/test_password_reset.py,auth
