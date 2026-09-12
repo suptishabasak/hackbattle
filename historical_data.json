@@ -1,1 +1,266 @@
-[]
+[
+    {
+        "pr_number": 37579,
+        "title": "[DOM] Fix Fragment compareDocumentPosition(document) TypeError",
+        "status": "pass",
+        "changed_files": [
+            "packages/react-dom-bindings/src/client/ReactFiberConfigDOM.js",
+            "packages/react-dom/src/__tests__/ReactDOMFragmentRefs-test.js"
+        ]
+    },
+    {
+        "pr_number": 37574,
+        "title": "[flags] Cleanup enableFragmentRefsScrollIntoView feature flag",
+        "status": "pass",
+        "changed_files": [
+            "packages/react-dom-bindings/src/client/ReactFiberConfigDOM.js",
+            "packages/react-dom/src/__tests__/ReactDOMFragmentRefs-test.js",
+            "packages/shared/ReactFeatureFlags.js",
+            "packages/shared/forks/ReactFeatureFlags.native-fb-dynamic.js",
+            "packages/shared/forks/ReactFeatureFlags.native-fb.js",
+            "packages/shared/forks/ReactFeatureFlags.native-oss.js",
+            "packages/shared/forks/ReactFeatureFlags.test-renderer.js",
+            "packages/shared/forks/ReactFeatureFlags.test-renderer.native-fb.js",
+            "packages/shared/forks/ReactFeatureFlags.test-renderer.www.js",
+            "packages/shared/forks/ReactFeatureFlags.www-dynamic.js",
+            "packages/shared/forks/ReactFeatureFlags.www.js"
+        ]
+    },
+    {
+        "pr_number": 37573,
+        "title": "[flags] Cleanup enableFragmentRefs feature flag",
+        "status": "pass",
+        "changed_files": [
+            "packages/react-dom/src/__tests__/ReactDOMFragmentRefs-test.js",
+            "packages/react-dom/src/__tests__/ReactDOMFragmentRefsDocument-test.js",
+            "packages/react-native-renderer/src/__tests__/ReactFabricFragmentRefs-test.internal.js",
+            "packages/react-reconciler/src/ReactChildFiber.js",
+            "packages/react-reconciler/src/ReactFiberBeginWork.js",
+            "packages/react-reconciler/src/ReactFiberCommitEffects.js",
+            "packages/react-reconciler/src/ReactFiberCommitHostEffects.js",
+            "packages/react-reconciler/src/ReactFiberCommitWork.js",
+            "packages/react/src/__tests__/ReactElementValidator-test.internal.js",
+            "packages/react/src/__tests__/ReactJSXElementValidator-test.js",
+            "packages/shared/ReactFeatureFlags.js",
+            "packages/shared/forks/ReactFeatureFlags.native-fb-dynamic.js",
+            "packages/shared/forks/ReactFeatureFlags.native-fb.js",
+            "packages/shared/forks/ReactFeatureFlags.native-oss.js",
+            "packages/shared/forks/ReactFeatureFlags.test-renderer.js",
+            "packages/shared/forks/ReactFeatureFlags.test-renderer.native-fb.js",
+            "packages/shared/forks/ReactFeatureFlags.test-renderer.www.js",
+            "packages/shared/forks/ReactFeatureFlags.www-dynamic.js",
+            "packages/shared/forks/ReactFeatureFlags.www.js"
+        ]
+    },
+    {
+        "pr_number": 37564,
+        "title": "Merge pull request #1 from react/main",
+        "status": "fail",
+        "changed_files": []
+    },
+    {
+        "pr_number": 37554,
+        "title": "Add React 19.3.0 changelog entry",
+        "status": "pass",
+        "changed_files": [
+            "CHANGELOG.md"
+        ]
+    },
+    {
+        "pr_number": 37550,
+        "title": "[RN] Move RN globals to RN private interface module",
+        "status": "pass",
+        "changed_files": [
+            ".eslintrc.js",
+            "packages/react-native-renderer/src/ReactFabricGlobalResponderHandler.js",
+            "packages/react-native-renderer/src/ReactFiberConfigFabric.js",
+            "packages/react-native-renderer/src/ReactFiberConfigFabricWithViewTransition.js",
+            "packages/react-native-renderer/src/ReactNativeFeatureFlags.js",
+            "packages/react-native-renderer/src/ReactNativeFiberInspector.js",
+            "packages/react-native-renderer/src/ReactNativePublicCompat.js",
+            "packages/react-native-renderer/src/__mocks__/react-native/Libraries/ReactPrivate/ReactNativeFeatureFlags.js",
+            "packages/react-native-renderer/src/__mocks__/react-native/Libraries/ReactPrivate/ReactNativePrivateInterface.js",
+            "packages/react-native-renderer/src/__tests__/ReactFabric-test.internal.js",
+            "scripts/flow/react-native-host-hooks.js",
+            "scripts/rollup/validate/eslintrc.rn.js"
+        ]
+    },
+    {
+        "pr_number": 37549,
+        "title": "[DevTools] Fix repository URL for react-devtools-cdt-mcp/package.json",
+        "status": "pass",
+        "changed_files": [
+            "packages/react-devtools-cdt-mcp/package.json"
+        ]
+    },
+    {
+        "pr_number": 37547,
+        "title": "[DevTools] Build react-devtools-cdt-mcp on npm publish",
+        "status": "pass",
+        "changed_files": [
+            "packages/react-devtools-cdt-mcp/package.json"
+        ]
+    },
+    {
+        "pr_number": 37546,
+        "title": "React DevTools 7.0.1 -> 8.0.0",
+        "status": "pass",
+        "changed_files": [
+            "packages/react-devtools-core/package.json",
+            "packages/react-devtools-extensions/chrome/manifest.json",
+            "packages/react-devtools-extensions/edge/manifest.json",
+            "packages/react-devtools-extensions/firefox/manifest.json",
+            "packages/react-devtools-inline/package.json",
+            "packages/react-devtools/CHANGELOG.md",
+            "packages/react-devtools/package.json"
+        ]
+    },
+    {
+        "pr_number": 37545,
+        "title": " [rust-compiler] Fix js_to_int32 to match js semantics",
+        "status": "pass",
+        "changed_files": [
+            "compiler/crates/react_compiler_optimization/src/constant_propagation.rs",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/constant-propagation-bit-ops-large-numbers.expect.md",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/constant-propagation-bit-ops-large-numbers.js"
+        ]
+    },
+    {
+        "pr_number": 37542,
+        "title": "[Flight] Keep an element pending while a referenced row is resolving",
+        "status": "pass",
+        "changed_files": [
+            "packages/react-client/src/ReactFlightClient.js",
+            "packages/react-server-dom-webpack/src/__tests__/ReactFlightDOMBrowser-test.js",
+            "packages/react-server-dom-webpack/src/__tests__/ReactFlightDOMNode-test.js"
+        ]
+    },
+    {
+        "pr_number": 37539,
+        "title": "[rust-compiler] Fix non-ASCII panic in ValidateNoSetStateInEffects",
+        "status": "pass",
+        "changed_files": [
+            "compiler/crates/react_compiler_validation/src/lib.rs",
+            "compiler/crates/react_compiler_validation/src/source_offsets.rs",
+            "compiler/crates/react_compiler_validation/src/validate_no_derived_computations_in_effects.rs",
+            "compiler/crates/react_compiler_validation/src/validate_no_set_state_in_effects.rs",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/repro-setState-in-effect-astral-source.expect.md",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/repro-setState-in-effect-astral-source.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/repro-setState-in-effect-non-ascii-source.expect.md",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/repro-setState-in-effect-non-ascii-source.ts"
+        ]
+    },
+    {
+        "pr_number": 37530,
+        "title": "test out TestPilot",
+        "status": "fail",
+        "changed_files": [
+            "compiler/apps/playground/app/page.tsx"
+        ]
+    },
+    {
+        "pr_number": 37524,
+        "title": "[rust-compiler] Preserve ref access location across phi joins",
+        "status": "pass",
+        "changed_files": [
+            "compiler/crates/react_compiler_validation/src/validate_no_ref_access_in_render.rs",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-ref-value-phi-with-ref.expect.md",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-ref-value-phi-with-ref.js"
+        ]
+    },
+    {
+        "pr_number": 37515,
+        "title": "Update MAINTAINERS file",
+        "status": "pass",
+        "changed_files": [
+            "MAINTAINERS"
+        ]
+    },
+    {
+        "pr_number": 37513,
+        "title": "[compiler] Support update expressions on captured variables",
+        "status": "pass",
+        "changed_files": [
+            "compiler/crates/react_compiler_hir/src/lib.rs",
+            "compiler/crates/react_compiler_hir/src/print.rs",
+            "compiler/crates/react_compiler_hir/src/visitors.rs",
+            "compiler/crates/react_compiler_inference/src/infer_mutation_aliasing_effects.rs",
+            "compiler/crates/react_compiler_inference/src/infer_reactive_places.rs",
+            "compiler/crates/react_compiler_inference/src/infer_reactive_scope_variables.rs",
+            "compiler/crates/react_compiler_inference/src/memoize_fbt_and_macro_operands_in_same_scope.rs",
+            "compiler/crates/react_compiler_lowering/src/build_hir.rs",
+            "compiler/crates/react_compiler_optimization/src/constant_propagation.rs",
+            "compiler/crates/react_compiler_optimization/src/dead_code_elimination.rs",
+            "compiler/crates/react_compiler_reactive_scopes/src/codegen_reactive_function.rs",
+            "compiler/crates/react_compiler_reactive_scopes/src/promote_used_temporaries.rs",
+            "compiler/crates/react_compiler_reactive_scopes/src/prune_non_escaping_scopes.rs",
+            "compiler/crates/react_compiler_ssa/src/rewrite_instruction_kinds_based_on_reassignment.rs",
+            "compiler/crates/react_compiler_typeinference/src/infer_types.rs",
+            "compiler/crates/react_compiler_validation/src/validate_context_variable_lvalues.rs",
+            "compiler/crates/react_compiler_validation/src/validate_hooks_usage.rs",
+            "compiler/crates/react_compiler_validation/src/validate_locals_not_reassigned_after_render.rs",
+            "compiler/docs/rust-port/rust-compiler-workflow-guide.md",
+            "compiler/docs/rust-port/rust-port-reactive-function.md",
+            "compiler/packages/babel-plugin-react-compiler/src/HIR/BuildHIR.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/HIR/DebugPrintHIR.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/HIR/HIR.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/HIR/PrintHIR.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/HIR/visitors.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/Inference/InferMutationAliasingEffects.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/Optimization/ConstantPropagation.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/Optimization/DeadCodeElimination.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/Optimization/OutlineJsx.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/ReactiveScopes/CodegenReactiveFunction.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/ReactiveScopes/InferReactiveScopeVariables.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/ReactiveScopes/MemoizeFbtAndMacroOperandsInSameScope.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/ReactiveScopes/PromoteUsedTemporaries.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/ReactiveScopes/PruneNonEscapingScopes.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/SSA/RewriteInstructionKindsBasedOnReassignment.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/TypeInference/InferTypes.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/Validation/ValidateContextVariableLValues.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/Validation/ValidateLocalsNotReassignedAfterRender.ts",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-update-expression-context-variable-in-effect.expect.md",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-update-expression-context-variable-in-effect.js",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-handle-update-context-identifiers.expect.md",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-handle-update-context-identifiers.js",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-update-expression-context-variable-via-type-annotation.expect.md",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/update-expression-context-identifier-in-map.expect.md",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/update-expression-context-identifier-in-map.js",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/update-expression-context-identifiers.expect.md",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/update-expression-context-identifiers.js",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/update-expression-context-variable-via-type-annotation.expect.md",
+            "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/update-expression-context-variable-via-type-annotation.js"
+        ]
+    },
+    {
+        "pr_number": 37503,
+        "title": "[DevTools] Document react-devtools-cdt-mcp for npm consumers",
+        "status": "pass",
+        "changed_files": [
+            "packages/react-devtools-cdt-mcp/README.md",
+            "packages/react-devtools-cdt-mcp/fixtures/app/README.md"
+        ]
+    },
+    {
+        "pr_number": 37500,
+        "title": "[DevTools] Prepare react-devtools-cdt-mcp 0.1.0 for npm",
+        "status": "pass",
+        "changed_files": [
+            "packages/react-devtools-cdt-mcp/package.json"
+        ]
+    },
+    {
+        "pr_number": 37499,
+        "title": "[DevTools] Document react-devtools-cdt-mcp for npm consumers",
+        "status": "pass",
+        "changed_files": []
+    },
+    {
+        "pr_number": 37498,
+        "title": "[DevTools] Add an independent npm publish workflow for react-devtools-cdt-mcp",
+        "status": "pass",
+        "changed_files": [
+            ".github/workflows/devtools_cdt_mcp_publish.yml"
+        ]
+    }
+]

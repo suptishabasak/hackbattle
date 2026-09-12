@@ -40,4 +40,4 @@ def collect_historical_prs(repo_name):
     print("Done! Historical PR data saved to historical_data.json")
 
 if __name__ == "__main__":
-    collect_historical_prs("suptishabasak/hackbattle")
+    collect_historical_prs("facebook/react")
